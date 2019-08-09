@@ -16,7 +16,7 @@ end
 
 def apply_coupons(cart, coupons)
   coupons.each{ |coupon|
-    if 
+    if cart.keys.include?()
     
   }
 end
