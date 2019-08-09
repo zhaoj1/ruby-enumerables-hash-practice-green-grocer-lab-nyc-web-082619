@@ -4,7 +4,12 @@ def consolidate_cart(cart)
     if new.key?(cart[index].keys)
       new[:count] += 1
     else 
-      
+      new.push(cart[index].keys)
+      cart[index] = {
+        :price => cart[index][:price],
+        :apply_clearance => cart[index][:clearance],
+        :count => 1
+      }
   }
   new
 end
