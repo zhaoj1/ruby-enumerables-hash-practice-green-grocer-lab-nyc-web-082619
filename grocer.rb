@@ -15,7 +15,10 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  if 
+  coupons.each{ | |
+    
+    
+  }
 end
 
 def apply_clearance(cart)
