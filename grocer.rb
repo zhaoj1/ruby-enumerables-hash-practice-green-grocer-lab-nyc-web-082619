@@ -1,9 +1,5 @@
 def consolidate_cart(cart)
   new = {}
-  cart.each { |index|
-  
-      }
-  }
   new
 end
 
