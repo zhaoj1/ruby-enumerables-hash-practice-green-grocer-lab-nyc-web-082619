@@ -10,7 +10,7 @@ def consolidate_cart(cart)
         :count => 1
       }
   }
-    
+  new
 end
 
 def apply_coupons(cart, coupons)
