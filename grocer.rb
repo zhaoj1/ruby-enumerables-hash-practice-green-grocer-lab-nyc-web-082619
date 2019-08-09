@@ -9,6 +9,7 @@ def consolidate_cart(cart)
         clearance: item.values[0][:clearance],
         count: 1
       }
+    end  
   end
   new
 end
