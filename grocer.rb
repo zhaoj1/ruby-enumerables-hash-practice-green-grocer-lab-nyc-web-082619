@@ -5,7 +5,7 @@ def consolidate_cart(cart)
       new.key[index.keys][:count] += 1
     else
       new.push(cart[index.key]) = 
-        
+        :price
   }
     
   }
