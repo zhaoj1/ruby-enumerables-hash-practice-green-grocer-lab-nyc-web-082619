@@ -6,6 +6,8 @@ def consolidate_cart(cart)
     else
       new.push(cart[index.key]) = { 
         :price => cart[index.values][:price]
+        :clearance => cart[index.values][:clearance]
+        :count => 1
       }
   }
     
