@@ -13,6 +13,10 @@ def consolidate_cart(cart)
   new
 end
 
+
+
+
+
 def apply_coupons(cart, coupons)
   # code here
 end
