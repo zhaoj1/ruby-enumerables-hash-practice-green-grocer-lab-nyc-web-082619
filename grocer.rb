@@ -1,7 +1,7 @@
 def consolidate_cart(cart)
   new = {}
-  cart.each {
-    if new.key.include? {
+  cart.each { |index|
+    if new.key.include?(cart[index])
     
   }
     
