@@ -1,5 +1,8 @@
 def consolidate_cart(cart)
   new = {}
+  cart.each{ |index|
+    if new.key?(cart[index].keys)  
+  }
   new
 end
 
