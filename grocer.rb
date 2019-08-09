@@ -29,6 +29,7 @@ def apply_coupons(cart, coupons)
         end
       cart[coupon[:item]][:count] -= coupon[:num]  
   }
+  end
 end
 
 def apply_clearance(cart)
