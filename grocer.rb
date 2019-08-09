@@ -45,8 +45,11 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
+  consolidated = consolidate_cart(cart)
+  coupon_cart = apply_coupon(consolidate, coupons)
+  clearance_cart = apply_clearance(coupon_cart)
+  
   total = 0
-  apply_clearance(cart).keys.each { |item|
-    total = 
-  }
+  
+  
 end
