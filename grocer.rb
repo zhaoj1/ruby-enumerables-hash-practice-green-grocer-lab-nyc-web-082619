@@ -1,7 +1,9 @@
 def consolidate_cart(cart)
   new = {}
   cart.each {
+    if new.key.include? {
     
+  }
     
   }
   
