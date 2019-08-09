@@ -1,5 +1,5 @@
 def consolidate_cart(cart)
-  new_hash = {}
+  new = {}
   cart.each {
     
     
