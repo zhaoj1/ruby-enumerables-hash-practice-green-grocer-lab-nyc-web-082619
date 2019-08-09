@@ -5,25 +5,12 @@ def consolidate_cart(cart)
       new.key[index.keys][:count] += 1
     else
       new.push(cart[index.key]) = { 
-        :price => cart[index.values][:price]
-        :clearance => cart[index.values][:clearance]
+        :price => cart[index.values][:price],
+        :clearance => cart[index.values][:clearance],
         :count => 1
       }
   }
     
-  }
-  
-  [
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"AVOCADO" => {:price => 3.00, :clearance => true }},
-  {"KALE"    => {:price => 3.00, :clearance => false}}
-]
- 
- {
-  "AVOCADO" => {:price => 3.00, :clearance => true, :count => 2},
-  "KALE"    => {:price => 3.00, :clearance => false, :count => 1}
-}
-  
 end
 
 def apply_coupons(cart, coupons)
