@@ -22,7 +22,8 @@ def apply_coupons(cart, coupons)
           cart[coupon_item][:count] += coupon[:num]
         else
           cart[coupon] = {
-            :price => coupon[:cost]
+            :price => coupon[:cost]/coupon[:num],
+            :clearance => cart[]
             :count => coupon[:num]
           }
   }
