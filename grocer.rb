@@ -1,7 +1,7 @@
 def consolidate_cart(cart)
   new = {}
   cart.each{ |index|
-    if new.key?(cart[index.keys[0]])
+    if new.key?(cart[index].keys)
       new[:count] += 1
     else 
       new.push(cart[index].keys)
