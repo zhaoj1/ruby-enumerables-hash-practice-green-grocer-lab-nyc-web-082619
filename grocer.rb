@@ -1,10 +1,10 @@
 def consolidate_cart(cart)
-  new = {}
+  new_cart = {}
   cart.each { |item|
-    if new[item.keys[0]]
-      new[item.keys[0]][:count] += 1
+    if new_cart[item.keys[0]]
+      new_cart[item.keys[0]][:count] += 1
     else 
-      new[item.keys[0]] = {
+      new_cart[item.keys[0]] = {
         :price => item.values[0][:price],
         :clearance => item.values[0][:clearance],
         :count => 1
@@ -14,12 +14,8 @@ def consolidate_cart(cart)
   new
 end
 
-
-
-
-
 def apply_coupons(cart, coupons)
-  # code here
+  if 
 end
 
 def apply_clearance(cart)
