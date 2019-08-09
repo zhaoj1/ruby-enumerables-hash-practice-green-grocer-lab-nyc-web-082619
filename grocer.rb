@@ -5,8 +5,8 @@ def consolidate_cart(cart)
       new[item.keys[0]][:count] += 1
     else 
       new[item.keys] = {
-        :price => item.values[:price],
-        :clearance => item.values[:clearance],
+        :price => item.values[0][:price],
+        :clearance => item.values[0][:clearance],
         :count => 1
       }
   }
