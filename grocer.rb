@@ -5,7 +5,6 @@ def consolidate_cart(cart)
       :count += 1
     else
       new.push(cart[index].key)
-    cart[index].key
   }
     
   }
